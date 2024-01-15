@@ -65,6 +65,8 @@ def analyza_textu(text):
     for length, occurrences in sorted(word_length_occurrences.items()):
         print(f"{length:2d} | {"*" * occurrences} {occurrences}")
 
+
+# Hlavní funkce programu
 def hlavni():
     
     if prihlaseni():
