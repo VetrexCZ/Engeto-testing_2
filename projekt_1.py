@@ -6,7 +6,6 @@ email: ddaniel.skrivanek@seznam.cz
 discord: vetrex89cz #3080
 """
 
-import matplotlib.pyplot as plt
 from task_template import TEXTS
 
 # Seznam registrovaných uživatelů
