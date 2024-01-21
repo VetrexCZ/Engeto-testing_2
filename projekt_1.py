@@ -38,19 +38,34 @@ def prihlaseni():
 def analyza_textu(text):
     
     words = text.split()
-    word_lengths = [len(word.strip(".,")) for word in words]
 
-    titlecase_words = [word for word in words if word.istitle()]
-    uppercase_words = [word for word in words if word.isupper()]
-    lowercase_words = [word for word in words if word.islower()]
+    titlecase_words = []
+    uppercase_words = []
+    lowercase_words = []
+    word_lenghts = []
+    numeric_strings = []
 
-    numeric_strings = [word for word in words if word.isdigit()]
+    for word in words:
+        stripped_word = word.strip(".,")
+
+        word_lenghts.append(len(stripped_word))
+        
+        if stripped_word.istitle():
+            titlecase_words.append(word)
+        elif stripped_word.isupper():
+            uppercase_words.append(word)
+        elif stripped_word.islower():
+            lowercase_words.append(word)
+
+        if stripped_word.isdigit():
+            numeric_strings.append(stripped_word)
+
     numeric_sum = sum(int(word) for word in numeric_strings)
 
-    word_length_occurrences = {
-        length: word_lengths.count(length) for length in set(word_lengths)
-    }
-
+    word_length_occurrences = {}
+    for length in set(word_lenghts):
+            word_length_occurrences[length] = word_lenghts.count(length)
+            
     print(f"There are {len(words)} words in the selected text.")
     print(f"There are {len(titlecase_words)} titlecase words.")
     print(f"There are {len(uppercase_words)} uppercase words.")
@@ -62,7 +77,7 @@ def analyza_textu(text):
     print("LEN | OCCURENCES | NR.")
     print("-" * 40)
     for length, occurrences in sorted(word_length_occurrences.items()):
-        print(f"{length:2d} | {"*" * occurrences} {occurrences}")
+        print(f"{length:2d} | {'*' * occurrences} {occurrences}")
 
 
 # Hlavní funkce programu
