@@ -1,1 +1,1 @@
-Jedná se o projekt s názvem textový analyzátor, který je zaměřený na získávání různých informaci z textu.
+Tento projekt s názvem textový analyzátor je zaměřený na získávání různých informaci z textu.
