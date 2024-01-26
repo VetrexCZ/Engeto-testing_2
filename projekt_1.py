@@ -89,7 +89,7 @@ def hlavni():
         try:
             vyber = int(input("Enter a number btw. 1 and 3 to select: "))
             print("-" * 40)
-            if 1 <= vyber <= 3:
+            if 1 <= vyber len(TEXTS):
                 analyza_textu(TEXTS[vyber - 1])
             else:
                 print("Invalid selection, terminating the program..")
