@@ -33,8 +33,3 @@ Měří a ověřuje výkon stránky:
 - Měří dobu načítání stránky
 - Ověřuje, že načítání trvá méně než 3 sekundy
 - Kontroluje viditelnost klíčových prvků stránky
-
-## Spuštění Testů
-```bash
-pytest engeto_projekt2.py
-```
