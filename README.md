@@ -1,7 +1,7 @@
-# Automatizované Testování StartupJobs.cz
+# Engeto: Automatizované Testy pro StartupJobs.cz
 
 ## Popis Projektu
-Tento projekt obsahuje automatizované testy pro webovou stránku StartupJobs.cz s využitím nástrojů Playwright a Python. Testy ověřují základní funkčnost, vyhledávání a výkon webových stránek.
+Tento projekt obsahuje automatizované testy pro určenou webovou stránku s využitím nástrojů Playwright a Python. Testy ověřují základní funkčnost, vyhledávání a výkon webových stránek.
 
 ## Požadavky
 - Python 3.x
@@ -38,15 +38,3 @@ Měří a ověřuje výkon stránky:
 ```bash
 pytest engeto_projekt2.py
 ```
-
-## Struktura Projektu
-```
-Final_project/
-├── engeto_projekt2.py  # Hlavní testovací soubor
-└── README.md           # Dokumentace projektu
-```
-
-## Autor
-- Daniel Skřivánek
-- Email: ddaniel.skrivanek@seznam.cz
-- Discord: vetrex89cz #3080
